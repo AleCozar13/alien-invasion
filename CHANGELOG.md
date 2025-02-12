@@ -3,41 +3,53 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.2.1] UNRELEASED
+## **[0.2.1] 2025-02-12**
 
-### Added
+### **Added**
+- `alien_invasion.py` - Added a Play button. Players can also press **"P"** to start the game.
+- `button.py` - Added a button class to display UI buttons on the screen.
+- `settings.py` - Implemented dynamic settings for game speed and difficulty.
+- `scoreboard.py` - Added a scoreboard to track the player's score.
+- `README.md` - Created a project README with installation instructions, usage guide, and project details.
 
-- `alien_invasion.py` Add a Play button, also press "P" to start the game.
-- `button.py` Generates a button in the screen.
-- `settings.py` Add dynamic settings.
-- `scoreboard.py` Add scoreboard to the game.
+### **Changed**
+- `settings.py` - Adjusted difficulty scaling for increasing game challenge over time.
 
+---
 
-### Changed
+## **[0.2.0] - 2025-02-10**
 
+### **Added**
+- `bullet.py` - Created the bullet class with its settings and behavior.
+- `alien.py` - Added alien generation logic for enemy movement and spawning.
+- `game_stats.py` - Introduced a module to track game statistics.
+
+### **Changed**
+- `alien_invasion.py`
+  - Refactored key event handling.
+  - Added **"Q"** key to quit the game.
+  - Implemented full-screen mode (disabled by default).
+  - Modified `_check_keydown_events()` to allow firing bullets with the **spacebar**.
+  - Created alien rows.
+  - Destroyed aliens when hit by bullets.
+  - Reduced ship lives when losing all three.
+- `ship.py`
+  - Implemented movement restrictions within screen bounds.
+  - Added speed control for smoother movement.
 - `settings.py`
+  - Introduced speed settings for ships and bullets.
+  - Set ship lives to **3**.
+  - Defined alien behavior settings.
 
-## [0.2.0] 2025-02-10
+---
 
-### Added
+## **[0.1.0] - 2025-02-09**
 
-- `bullet.py`Generates the bullets and it settings.
-- `alien.py` Generates an alien in the screen.
-- `game_stats.py` Track game statistics.
+### **Added**
+- `alien_invasion.py` - Created game window, set frame rate, and drew the ship.
+- `settings.py` - Added a `Settings` class to store game settings.
+- `ship.py` - Implemented ship graphics and movement.
+- `CHANGELOG.md` - Started the changelog for tracking changes.
 
-### Changed
-
-- `alien_invasion.py` Refactor key events method. Add press Q to exit game. Add full screen mode code, but not activate. Modify _check_keydown_events() to fire bullets when pressing the spacebar. Generates the alien rows. Get rid of aliens when impact bullets, also get rid of ship when loosing 3 lives.
-- `ship.py` Set right and left movement of the ship, also limit to the screen are. Add speed control.
-- `settings.py` Add speed setting for the ship and for the bullets. Set 3 ship lives. Create aliens settings.
-
-## [0.1.0] 2025-02-09
-
-### Added
-
-- `alien_invasion.py` Creates game window, add frame rate, draw the ship.
-- `settings.py` Module that contains class Settings to store all settings values.
-- `ship.py` Generates the image of the ship, set right and left.
-- CHANGELOG.
+---

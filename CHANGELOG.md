@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.2.1] UNRELEASED
 
+### Added
+
+- `alien_invasion.py` Add a Play button, also press "P" to start the game.
+- `button.py` Generates a button in the screen.
+- `settings.py` Add dynamic settings.
+- `scoreboard.py` Add scoreboard to the game.
+
+
+### Changed
+
+- `settings.py`
+
 ## [0.2.0] 2025-02-10
 
 ### Added
